@@ -1,0 +1,483 @@
+/* Reset default styles for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the font family for the webpage */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Start Header / Navbar section*/
+
+/* Styles for the header*/
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+/* Styles for navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for unordered list*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; 
+}
+
+/* Styles for list item elements*/
+.nav-links li {
+  margin-right: 20px;
+}
+
+/* Styles for the button and the links*/
+.nav-button,
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styles for the button*/
+.nav-button {
+  background-color: #ff8c00;
+  border: none;
+  cursor: pointer;
+}
+
+/* Links hover effect */
+.nav-button:hover,
+.nav-links a:hover {
+  background-color: #ff6600;
+  color: #fff; 
+}
+/* End Header / Navbar section */
+
+
+/* Start the main content / first section contains an image and texts*/
+.first-section {
+  position: relative;
+}
+
+.first-section img {
+  width: 100%;
+  max-height: 600px; 
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.first-section-text {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: whitesmoke;
+}
+
+.first-section-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.first-section-text h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-gap {
+  height: 20px; 
+}
+
+.first-section-text p {
+  font-size: 16px;
+}
+/* End the main content / first section contains an image and texts*/
+
+
+/* Start the main content / second section contains an image and text*/
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f0; 
+}
+
+.second-section-text {
+  flex: 1;
+}
+
+.second-section-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  text-align: left;
+  line-height: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.second-section-image img {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+}
+/* End the main content / second section contains an image and text*/
+
+
+/* Start the main content / third section contains three images*/
+.third-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.third-section img {
+  width: 100%; 
+  height: auto;
+
+}
+/* End the main content / third section contains three images*/
+
+
+/* Start the main content / fourth section contains an image and text*/
+.fourth-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f0; 
+}
+
+.fourth-section-text {
+  flex: 1;
+}
+
+.fourth-section-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  text-align: left;
+  line-height: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.fourth-section-image img {
+  width: 400px; 
+  height: 400px; 
+  border-radius: 50%; 
+}
+/* End the main content / fourth section contains an image and text*/
+
+
+/* Start the main content / fifth section contains an video and text over the video*/
+.fifth-section {
+  position: relative;
+  height: 400px; 
+  padding-bottom: 20px;
+  
+}
+
+.fifth-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.8);
+}
+
+.fifth-section-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.fifth-section-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.fifth-section-overlay p {
+  font-size: 20px;
+  line-height: 2;
+  animation: fadeInUp 1s ease-in-out;
+
+}
+/* End the main content / fifth section contains an video and text over the video*/
+
+
+
+/*Start the footer of the Home and Blog page*/
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+/* Styles for paragraphs within the footer section */
+.footer p{
+  margin: 0;
+  padding: 10px 40px;
+}
+/*End the footer of the Home and Blog page*/
+
+
+/*Start styling for the blog page*/
+.first-section-blog, .third-section-blog{
+  text-align: center;
+}
+
+.images-blog {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.images-blog img {
+  max-width: 50%;
+  height: auto;
+}
+
+.second-section-blog{
+  padding: 20px;
+}
+
+.blog-list ol{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+/*End styling for the blog page*/
+
+
+/*Start styling for the contact page*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.contact {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  color: #333;
+  text-align: center;
+}
+
+.contact-card div {
+  margin-bottom: 15px;
+}
+
+label {
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #ff8c00;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6600;
+}
+/*End styling for the contact page*/
+
+
+
+/*Start styling for the footer / contact page*/
+.cfooter{
+  background-color: #333;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* Styles for a row element */
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+/* Styles for columns within the footer */
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+/* Styles for h4 elements within footer columns */
+.footer-col h4{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Styles for paragraphs within footer columns */
+.footer-col p {
+  color: white;
+}
+
+/* Styles for links within unordered lists in footer columns */
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+}
+
+/* Hover effect for links within unordered lists in footer columns */
+.footer-col ul li a:hover{
+  color: blue;
+  padding-left: 8px;
+}
+
+/* Styles for social links */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.copyright{
+  color: white;
+}
+/*End styling for the footer / contact page*/
+
+
+
+/* Start Media query max-width: 1000px */
+@media screen and (max-width: 1000px){
+  .first-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-section-text{
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 20px;
+    color: black;
+  }
+
+  .second-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-section-text p{
+    box-shadow: none;
+  }
+
+  .second-section-image img{
+    border-radius: 10%;
+  }
+
+  .third-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fourth-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fourth-section-text p{
+    box-shadow: none;
+  }
+
+  .fourth-section-image img{
+    border-radius: 10%;
+  }
+
+  .fifth-section-overlay{
+    display: none;
+  }
+
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+/* End Media query max-width: 1000px */
+
+
+/* Start the animation for .fifth-section-overlay p*/
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* End the animation for .fifth-section-overlay p*/
+
+
+
